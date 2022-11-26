@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url('Minecraft.ttf');
+}
+
+header {
+    text-align: center;
+    font-size: 8em;
+    color: rgb(228, 166, 166);
+    font-family: Minecraft;
+}
+
+header {
+    animation: color-change 5s infinite;
+  }
+  
+  @keyframes color-change {
+    0% { color: rgb(76, 90, 247); }
+    25% { color: rgb(247, 241, 76); }
+    50% { color: rgb(0, 255, 166); }
+    75% { color: rgb(20, 76, 218); }
+    100% { color: rgb(76, 90, 247); }
+  }
+  #container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: yellow;
+  }
+  #animate {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: red;
+  }
