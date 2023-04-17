@@ -1,21 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Pixel</title>
-</head>
-<body>
-    <script src="index.js"></script>
-    <header>
-        <h1>PIXEL</h1>
-    </header>
-    <p><button onclick="myMove()">Click Me</button></p> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>Pixel</title>
+    </head>
+    <body>
+        <script src="index.js"></script>
+        <div>
+            <div class="dropdown">
+                <button class="dropbtn">Menu
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Game</a>
+                    <a href="#">Community</a>
+                    <a href="#">Account</a>
+                </div>
+            </div>
+        </div>
 
-<div id ="container">
-  <div id ="animate"></div>
-</div>
-</body>
+        <div class="jumbotron text-center" id="title">
+            <h1>Old School Runescape</h1>
+        </div>
+
+        <div class="container" id="playOptionButtons">
+            <div class="row">
+                <div class="col-sm-2">
+                    <h3>New User?</h3>
+                    <h3>Sign up here</h3>
+                </div>
+                <div class="col-sm-2">
+                    <h3>Free player?</h3>
+                    <h3>Play Now!</h3>
+                    <h4>(Old School 138)</h4>
+                </div>
+                <div class="col-sm-2">
+                    <h3>Member?</h3>
+                    <h3>Play Now!</h3>
+                    <h4>(Old School 87)</h4>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4" id="osrs_map">
+                    <h3>Expansive Map</h3>
+                </div>
+                <div class="col-sm-4" id="firecape">
+                    <h3>23 Skills To Master</h3>
+                </div>
+                <div class="col-sm-4" id="questing">
+                    <h3>In-Depth Questing</h3>
+                </div>
+            </div>
+        </div>
+        <p><button onclick="myMove()">Click Me</button></p>
+        <div id="container">
+            <div id="animate"></div>
+        </div>
+    </body>
 </html>
